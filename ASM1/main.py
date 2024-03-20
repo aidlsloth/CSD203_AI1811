@@ -11,12 +11,11 @@ print("2. Delete Book")
 print("3. Borrow Book")
 print("4. Return Book")
 print("5. View Book")
-choice = int(input("Selection 1 -> 5"))
+choice = int(input("Selection 1 -> 5: "))
 print("OUTPUT")
 
 if choice == 1:
-    newbook = input("Book's info")
-    AddBook(newbook)
+    AddBook.f1('B01', 'LOTR', 'J.J.R.Tolkin', '0', '0')
 
 elif choice == 2:
     DeleteBook()

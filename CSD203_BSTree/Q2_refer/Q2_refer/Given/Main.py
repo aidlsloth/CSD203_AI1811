@@ -24,13 +24,13 @@ class Main:
                     b.append(int(listValue[i]))
                 self.data.append(b)
         f1.close()
-    # def display(self):
-    #     for line in self.data:
-    #         print(line, end ="\n")        
-    #             # listName = line.strip().split(", ")
-    # def f1(self, tree):
-    #     for i in range(len(self.data[0])):           
-    #         tree.insert(self.data[0][i],self.data[1][i])
+    def display(self):
+        for line in self.data:
+            print(line, end ="\n")        
+                # listName = line.strip().split(", ")
+    def f1(self, tree):
+        for i in range(len(self.data[0])):           
+            tree.insert(self.data[0][i],self.data[1][i])
     # #end def       
     def createTree(self,tree,begin=0, end=0):
         from Q2_1 import Q2_1; q21 = Q2_1()
