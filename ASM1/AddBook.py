@@ -1,17 +1,16 @@
 from book import *
-from Node import *
+from linkedList import *
+from database import*
+def addBook():
+    title = input("Enter title of book: ")
+    author = input("Enter author of book: ")
+    status = input("Enter status of book: ")
+    bookAdd = book(title, author, status)
 
-class AddBook:
-
-    def f1(self, bid, title, author, status):
-        newbook = Book(bid, title, author, status)
-
-        if not self.head:
-            self.head = newbook
-
-        else:
-            current = self.head
-            while current.next:
-                current = current.next
-
-            current.next = newbook
+    if library.isEmpty():
+        library.head = node(bookAdd)
+    else:
+        currentNode = library.head
+        while currentNode.next:
+            currentNode = currentNode.next
+        currentNode.next = node(bookAdd)  
